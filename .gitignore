@@ -1,6 +1,8 @@
 ## Ignore node_modules in all exercises and subfolders
 node_modules/
 **/node_modules/
+**/.git
+**/.gitignore
 
 # Expo / React Native common ignores (optional)
 .expo/
