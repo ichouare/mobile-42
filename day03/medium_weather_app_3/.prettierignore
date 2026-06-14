@@ -1,0 +1,11 @@
+/node_modules
+/.vscode
+/android
+/ios
+/package*.json
+/tsconfig*.json
+/.prettier*
+/.editorconfig
+/.eslint*
+/.git
+/.github
