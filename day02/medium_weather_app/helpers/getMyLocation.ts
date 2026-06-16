@@ -26,7 +26,7 @@ export async function getMyLocation() {
         return null;
       }
 
-    const { latitude, longitude } = location.coords;
+    const { latitude, longitude } = location?.coords;
     // const address =
     //   await Location.reverseGeocodeAsync({
     //     latitude,

@@ -6,21 +6,28 @@ import { sharedStyles } from "@/constant/sharedStyle";
 import { useGeoState } from "@/store/store";
 
 export default function Index() {
-  const inset = useSafeAreaInsets()
-  const userGeolation = useGeoState(state => state.userGeolation)
+  const inset = useSafeAreaInsets();
+  const userGeolation = useGeoState((state) => state.userGeolation);
   return (
     <View
-
       style={{
-        ...sharedStyles.screenContainer
+        ...sharedStyles.screenContainer,
       }}
     >
-
-
-      <Text style={{color: COLORS.white}}>Currently screen.</Text>
-      <Text lineBreakMode="tail"  numberOfLines={2}  style={{color:COLORS.white, fontWeight: "bold",  fontSize: 32, maxWidth: "80%", textAlign: "center"}}>{userGeolation}</Text>
+      <Text style={{ color: COLORS.white }}>Currently screen.</Text>
+      <Text
+        lineBreakMode="tail"
+        numberOfLines={2}
+        style={{
+          color: COLORS.white,
+          fontWeight: "bold",
+          fontSize: 32,
+          maxWidth: "80%",
+          textAlign: "center",
+        }}
+      >
+        {userGeolation}
+      </Text>
     </View>
   );
 }
-
-

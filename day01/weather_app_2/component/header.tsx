@@ -45,8 +45,8 @@ function Header({ leftIcon, rightIcon, rightFunc }: Tprops) {
         onPress={async () => {
           // const city = await getMyLocation()
 
-          setGeo("");
           setUserGeolation("Geolocation");
+          // setGeo("");
         }}
         style={{ ...styles.btn }}
         activeOpacity={0.8}
